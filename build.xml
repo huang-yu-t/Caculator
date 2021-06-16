@@ -75,7 +75,7 @@
 
 
 			</classpath>
-			<classpath location="lib/junit-4.13.2.jar" />
+			<classpath location="lib/junit-4.10.jar" />
 			<classpath location="lib/ant-junit.jar" />
 			<formatter type="xml" />
 
