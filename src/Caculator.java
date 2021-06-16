@@ -8,7 +8,7 @@ public class Caculator {
     
     public void substract(int n)
     {
-        result=result-1;        //Bug：正确的应该是result=result-n;
+        result=result-n;        //Bug：正确的应该是result=result-n;
     }
     
     public void multiply(int n)
@@ -28,7 +28,19 @@ public class Caculator {
     
     public void squareRoot(int n)
     {
-        for(;;);    //Bug:死循环 
+    	int num;
+        for(int i=2;i<n;i++)
+        {
+        	if(n%i==0)
+        	{
+        		num=n/i;
+        		if(num==i)
+        		{
+        			result=num;
+        		}
+        	}
+        	//Bug:死循环 
+        }
     }
     
     public void clear()
